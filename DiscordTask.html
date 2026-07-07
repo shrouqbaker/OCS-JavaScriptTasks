@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Task</title>
+</head>
+
+<body>
+    <script>
+        // Question 1
+        function tellFortune(job, location, name, numberofchildren) {
+            return `You will be a ${job} in ${location}, and married to ${name} with ${numberofchildren} kids.`;
+        }
+
+        console.log(tellFortune("software engineer", "Jordan", "Alice", 3));
+
+        // Question 2
+        function calculateDogAge(age) {
+            let a = age * 7;
+            console.log(`Your doggie is ${a} years old in dog years!`);
+        }
+
+        calculateDogAge(1);
+
+
+        // Question 3
+        function calculateSupply(age, amountperday) {
+            let a = 100 - age;
+            let amount = a * 365 * amountperday;
+            console.log(`You will need ${amount} cups of tea to last you until the ripe old age of 100`)
+        }
+
+        calculateSupply(30, 3);
+
+         // Question 4
+        function greet(name) {
+            console.log(`Hello, ${name}`);
+        }
+
+        greet("Shrouq");
+
+        /*
+                Question 5
+                // what is the error:
+                function double(cat) {
+                    return 2 * x;
+                } 
+                    undefine x
+        
+                function double(7) {
+                    return 2 * 7;
+                }
+                    argument is number
+        
+                function double('7') {
+                    return 2 * 'x';
+                }
+                     argument is string
+        
+        */
+
+        /*  Question 6 : fixed the function */
+        function double1(x) {
+            return 2 * x;
+        }
+
+        function double2(x) {
+            return 2 * x;
+        }
+
+        function double3(x) {
+            return 2 * x;
+        }
+
+        /* Question 7 */
+        function cube(num) {
+            console.log(num * num * num)
+        }
+
+        cube(4);
+
+
+        /* Question 8 */
+        function multiply(num1, num2) {
+            console.log(num1 * num2);
+        }
+
+        multiply(3, 4);
+
+        // Question 9
+        function canIGetADrivingLicense(age) {
+            if (age >= 20)
+                console.log("Yes You Can");
+            else {
+                let m = 20 - age;
+                console.log(`please come back after ${m} years to get one`);
+            }
+        }
+        canIGetADrivingLicense(15);
+
+
+        // Question 10
+        function sameLength(str1, str2) {
+            if (str1.length == str2.length)
+                console.log(true);
+            else
+                console.log(false);
+        }
+        sameLength("tree", "clue");
+        sameLength("tree", "car");
+
+        // Question 11
+        function largerNubmer(num1, num2) {
+            if (num1 > num2) {
+                console.log(num1);
+
+            }
+            else {
+                console.log(num2);
+            }
+        }
+        largerNubmer(5, 6);
+        largerNubmer(5, 3);
+
+
+        // Question 12
+        function smallerNubmer(num1, num2, num3) {
+            if (num1 < num2) {
+                if (num1 < num3)
+                    console.log(num1);
+                else {
+                    console.log(num3);
+                }
+
+            }
+            else if (num2 < num3) {
+                console.log(num2);
+            }
+            else {
+                console.log(num3);
+            }
+        }
+        smallerNubmer(8, 6, 7)
+        smallerNubmer(5, 99, 34)
+        smallerNubmer(5, 3, 3)
+        smallerNubmer(5, 99, 3)
+
+        // Question 13
+        function shorterString(str1, str2, str3, str4, str5) {
+            let short = str1;
+
+            if (str2.length < short.length) {
+                short = str2;
+            }
+
+            if (str3.length < short.length) {
+                short = str3;
+            }
+
+            if (str4.length < short.length) {
+                short = str4;
+            }
+
+            if (str5.length < short.length) {
+                short = str5;
+            }
+
+            console.log(short);
+        }
+        shorterString("air", "tr", "by", "car", "github")
+        shorterString("air", "by", "car", "school", "github")
+        shorterString("by", "tr", "car", "air", "github")
+        shorterString("air", "tr", "car", "by", "github")
+        shorterString("air", "school", "car", "by", "github")
+
+        // َQuestion 14
+        function longerString(str1, str2, str3, str4) {
+            let long = str1;
+
+            if (str2.length > long.length) {
+                long = str2;
+            }
+
+            if (str3.length > long.length) {
+                long = str3;
+            }
+
+            if (str4.length > long.length) {
+                long = str4;
+            }
+
+            console.log(long);
+        }
+        longerString("air", "school", "car", "github");
+        longerString("air", "schoo", "car", "github");
+
+        // Question 15
+        function isEven(num) {
+            if (num % 2 == 0) {
+                console.log(true);
+            }
+            else {
+                console.log(false);
+            }
+        }
+        isEven(2);
+        isEven(1);
+
+        // Question 16
+        function isOdd(num) {
+            if (num % 2 != 0) {
+                console.log(true);
+            }
+            else {
+                console.log(false);
+            }
+        }
+        isOdd(4);
+        isOdd(5);
+
+        // Question 17
+        function positive(num) {
+            if (num > 0) {
+                console.log(num);
+            }
+            else {
+                console.log(num * -1);
+            }
+        }
+        positive(4);
+        positive(-5);
+
+        // Question 18
+        function fullName(firstName, lastName) {
+            console.log(`${firstName} ${lastName}`);
+        }
+
+        fullName("Shrouq", "Baker");
+        fullName("Adam", "McCallen");
+        fullName("Alex", "Mercer");
+
+        // Question 19
+        function average(num1, num2, num3, num4, num5) {
+            let sum = num1 + num2 + num3 + num4 + num5;
+            console.log(sum / 5.0);
+        }
+        average(1, 2, 3, 4, 5);
+        average(5, 7, 9, 3, 5);
+
+        // Question 20
+        function randomNumber() {
+            console.log(Math.random());
+        }
+        randomNumber();
+        randomNumber();
+
+
+        // Question 21
+        function randomBetweenNumbers(max, min) {
+            console.log(Math.random() * (max - min) + min);
+        }
+        randomBetweenNumbers(1, 8);
+        randomBetweenNumbers(3, 100);
+
+
+        // Question 22
+        function scoreInUniversty(score) {
+            if (score >= 95 && score <= 100) {
+                console.log("A");
+            } else if (score >= 85 && score <= 94) {
+                console.log("B");
+            } else if (score >= 70 && score <= 84) {
+                console.log("C");
+            } else if (score >= 50 && score <= 69) {
+                console.log("D");
+            } else if (score >= 0 && score <= 49) {
+                console.log("F");
+            }
+        }
+        scoreInUniversty(96);
+        scoreInUniversty(3);
+        scoreInUniversty(71);
+
+        // Question 23
+        let count = 0;
+
+        function counter() {
+            count++;
+            console.log(count);
+        }
+        counter();
+        counter();
+        counter();
+        // Question 24
+        function resetcounter() {
+            console.log(count);
+            count = 0;
+        }
+        resetcounter();
+        counter();
+
+    </script>
+
+</body>
+
+</html>

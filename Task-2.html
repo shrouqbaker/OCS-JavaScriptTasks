@@ -52,13 +52,16 @@
                 alert("Invalid month!");
         }
 
-        // for (let i = 1; i <= 10; ) {
-        //   for (let j = 0; j < x; j++) {
-        //     document.write(i++);
-        //   }
+        let c = 1;
+        for (let i = 0; i < 5; i++) {
+            for (let j = 0; j < i; j++) {
+                document.write(c);
+                c++;
+            }
 
-        //   document.write("<br>");
-        // }
+            document.write("<br>");
+        }
+        document.write("<br>");
 
         for (let i = 1; i < 1000; i++) {
             if (i % 13 == 0) {
@@ -80,6 +83,27 @@
             return base * height * 0.5;
         }
         console.log(area(8, 5));
+
+        function isPandigital() {
+            var b = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+            let number =prompt("plz enter the number");
+            let size = number.length;
+            number= Number(number);
+            for (var i = 0; i < size; i++) {
+                b[parseInt(number % 10)] = 1;
+                number= number/10;
+               
+            }
+            for (var i = 0; i < 10; i++) {
+                if (b[i] == 0) {
+                    console.log(false);
+                    return;
+                }
+            }
+            console.log(true);
+        }
+        isPandigital();
+
 
         let drink = prompt("Enter your favorite drink:");
         let price = 0;
