@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-2</title>
+</head>
+
+<body>
+    <script>
+        let month = Number(prompt("Enter your birth month:"));
+
+        switch (month) {
+            case 1:
+                alert("January");
+                break;
+            case 2:
+                alert("February");
+                break;
+            case 3:
+                alert("March");
+                break;
+            case 4:
+                alert("April");
+                break;
+            case 5:
+                alert("May");
+                break;
+            case 6:
+                alert("June");
+                break;
+            case 7:
+                alert("July");
+                break;
+            case 8:
+                alert("August");
+                break;
+            case 9:
+                alert("September");
+                break;
+            case 10:
+                alert("October");
+                break;
+            case 11:
+                alert("November");
+                break;
+            case 12:
+                alert("December");
+                break;
+            default:
+                alert("Invalid month!");
+        }
+
+        // for (let i = 1; i <= 10; ) {
+        //   for (let j = 0; j < x; j++) {
+        //     document.write(i++);
+        //   }
+
+        //   document.write("<br>");
+        // }
+
+        for (let i = 1; i < 1000; i++) {
+            if (i % 13 == 0) {
+                document.write(i + "<br>");
+            }
+        }
+
+        function multiplication2(num1, num2) {
+            let result = 0;
+            for (let i = 1; i <= num1; i++) {
+                result += num2;
+            }
+            return result;
+        }
+
+        console.log(multiplication2(5, 4));
+
+        function area(base, height) {
+            return base * height * 0.5;
+        }
+        console.log(area(8, 5));
+
+        let drink = prompt("Enter your favorite drink:");
+        let price = 0;
+
+        switch (drink) {
+            case "banana":
+                price = 20;
+                break;
+
+            case "orange":
+                price = 15;
+                break;
+
+            case "apple":
+                price = 18;
+
+                break;
+
+            case "mango":
+                price = 25;
+                break;
+
+            default:
+                alert("Sorry, this drink is not available.");
+        }
+
+        if (price != 0) {
+            alert(`The price of a ${drink} drink is ${price} dollars.`);
+        }
+
+        function fullName(firstName, lastName) {
+            return firstName + " " + lastName;
+        }
+
+        console.log(fullName("Shrouq", "Baker"));
+
+    </script>
+</body>
+
+</html>
