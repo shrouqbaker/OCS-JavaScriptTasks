@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-1</title>
+</head>
+
+<body>
+
+
+    <script>
+        let op = prompt("Enter operation");
+        let num1 = Number(prompt("Enter the first number"));
+        let num2 = Number(prompt("Enter the second nember"));
+
+        switch (op) {
+            case '+':
+                alert(num1 + num2);
+                break;
+
+            case '-':
+                alert(num1 - num2);
+                break;
+
+            case '*':
+                alert(num1 * num2);
+                break;
+
+            case '/':
+                alert(num1 / num2);
+                break;
+
+            default:
+                alert("please enter valid operation");
+
+        }
+
+        let mark = 60;
+
+        if (mark >= 90 && mark <= 100) {
+            document.write("A+ ")
+        }
+        else if (mark >= 80 && mark < 90) {
+            document.write("A")
+        }
+
+        else if (mark >= 70 && mark < 80) {
+            document.write("B")
+        }
+
+        else if (mark >= 60 && mark < 70) {
+            document.write("C")
+        }
+
+        else if (mark >= 50 && mark < 60) {
+            document.write("D")
+        }
+
+        else if (mark < 50) {
+            document.write("Fail")
+        }
+        document.write("<br>")
+
+
+
+        const pi = 3.14;
+
+        let radius = Number(prompt("Enter the radius "));
+        let area = radius * radius * pi;
+        alert(`Area of circle is ${area}`);
+
+        let x = Number(prompt("Enter the first number"));
+        let y = Number(prompt("Enter the second nember"));
+
+        if (x > y) {
+            alert("Hello World!")
+            console.log("Hello World!");
+            document.write("Hello World!");
+        } else {
+            alert("GoodBye");
+            console.log("GoodBye");
+            document.write("GoodBye");
+        }
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
